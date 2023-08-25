@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+puts 'Destroying seeds!'
+Movie.destroy_all
 
 puts 'Seeding movies...'
 Movie.create!(title: 'Wonder Woman 1984',
